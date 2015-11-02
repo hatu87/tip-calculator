@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var slrPercentage: UISlider!
     @IBOutlet weak var txtBills: UITextField!
     @IBOutlet weak var lblResult: UILabel!
     override func viewDidLoad() {
@@ -26,8 +27,6 @@ class ViewController: UIViewController {
     private var calculatorModel: TipsCalculatorModel!
     
     @IBAction func onBills_BeginEditing(sender: AnyObject) {
-        calculatorModel.tipsPercentage = 0.1
-        
         if let text: String = txtBills.text {
             if let bills = Float(text) {
                 let result = calculatorModel.calculateTips(bills)
@@ -38,5 +37,10 @@ class ViewController: UIViewController {
 
         }
 
+    }
+    @IBAction func onPercentage_Editing(sender: AnyObject) {
+        calculatorModel.tipsPercentage = slrPercentage.value
+        
+        onBills_BeginEditing(sender)
     }
 }
