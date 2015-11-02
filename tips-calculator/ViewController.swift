@@ -21,5 +21,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
+    @IBAction func onBills_BeginEditing(sender: AnyObject) {
+        
+        if let text: String = txtBills.text {
+            if let bills = Float(text) {
+                let result = bills * 1.1
+                
+                lblResult.text = String(format: "%.2f", result)
+            }
+            
 
+        }
+
+    }
+}
