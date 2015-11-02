@@ -33,11 +33,16 @@ class ViewController: UIViewController {
                 let result = calculatorModel.calculateTips(bills)
                 
                 lblResult.text = String(format: "%.2f", result)
+            }else{
+                lblResult.text = "0"
             }
             
 
         }
 
+    }
+    @IBAction func onScreen_Tap(sender: AnyObject) {
+        txtBills.endEditing(true)
     }
     @IBAction func onPercentage_Editing(sender: AnyObject) {
         let percent = round(slrPercentage.value * 10)
