@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412444F11BE764A500B6F740 /* TipsCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412444F01BE764A400B6F740 /* TipsCalculatorModel.swift */; };
 		416CC1BC1BE6FA6600F882D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CC1BB1BE6FA6600F882D4 /* AppDelegate.swift */; };
 		416CC1BE1BE6FA6600F882D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CC1BD1BE6FA6600F882D4 /* ViewController.swift */; };
 		416CC1C11BE6FA6700F882D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416CC1BF1BE6FA6700F882D4 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		412444F01BE764A400B6F740 /* TipsCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsCalculatorModel.swift; sourceTree = "<group>"; };
 		416CC1B81BE6FA6600F882D4 /* tips-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tips-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		416CC1BB1BE6FA6600F882D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		416CC1BD1BE6FA6600F882D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412444EF1BE7647E00B6F740 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				412444F01BE764A400B6F740 /* TipsCalculatorModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		416CC1AF1BE6FA6600F882D4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		416CC1BA1BE6FA6600F882D4 /* tips-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				412444EF1BE7647E00B6F740 /* Models */,
 				416CC1BB1BE6FA6600F882D4 /* AppDelegate.swift */,
 				416CC1BD1BE6FA6600F882D4 /* ViewController.swift */,
 				416CC1BF1BE6FA6700F882D4 /* Main.storyboard */,
@@ -258,6 +269,7 @@
 			files = (
 				416CC1BE1BE6FA6600F882D4 /* ViewController.swift in Sources */,
 				416CC1BC1BE6FA6600F882D4 /* AppDelegate.swift in Sources */,
+				412444F11BE764A500B6F740 /* TipsCalculatorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
