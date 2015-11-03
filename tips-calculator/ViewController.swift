@@ -19,12 +19,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // load tip default
-        
+        loadAmount()
     }
 
     override func viewWillAppear(animated: Bool) {
         calculatorModel = TipsCalculatorModel()
         loadDefauts()
+        
+
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        saveAmount()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     private func loadDefauts(){
@@ -33,6 +44,29 @@ class ViewController: UIViewController {
         
         setTipPercentage(percent)
     }
+    
+    private func loadAmount(){
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let bills = defaults.floatForKey("amount")
+        
+        txtBills.text = bills.description
+        //onBills_BeginEditing(txtBills)
+    }
+    
+    private func saveAmount(){
+        if let text: String = txtBills.text {
+            if let bills = Float(text) {
+                
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setFloat(bills, forKey: "amount")
+                defaults.synchronize()
+
+            }
+        }
+
+
+    }
+    
     
     private func setTipPercentage(percent: Float){
         calculatorModel.tipsPercentage = percent
@@ -45,10 +79,7 @@ class ViewController: UIViewController {
 
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
     private var calculatorModel: TipsCalculatorModel!
     

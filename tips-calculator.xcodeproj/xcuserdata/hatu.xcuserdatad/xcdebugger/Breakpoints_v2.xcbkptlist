@@ -10,11 +10,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tips-calculator/ViewController.swift"
-            timestampString = "468173094.5641"
+            timestampString = "468203053.663507"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "setTipPercentage(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tips-calculator/ViewController.swift"
+            timestampString = "468203053.663507"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "onBills_BeginEditing(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,26 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tips-calculator/ViewController.swift"
-            timestampString = "468173094.5641"
+            timestampString = "468203053.663507"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tips-calculator/ViewController.swift"
-            timestampString = "468173094.5641"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "onPercentage_Editing(_:)"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "onBills_BeginEditing(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
