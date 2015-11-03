@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.(loadAmount in _AD9C291D7F184965A2342036750A7550)() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "date.timeIntervalSinceNow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "SettingsViewController.(setTipPercentage in _E0F4B4C4A073DA575F59D9CF36C2FAF1)(Float) -&gt; ():SettingsViewController.swift">
          <PersistentStrings>
             <PersistentString

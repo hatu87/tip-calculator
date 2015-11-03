@@ -47,9 +47,15 @@ class ViewController: UIViewController {
     
     private func loadAmount(){
         let defaults = NSUserDefaults.standardUserDefaults()
-        let bills = defaults.floatForKey("amount")
-        
-        txtBills.text = bills.description
+        if let date = defaults.objectForKey("amount-date") {
+            let interval = -date.timeIntervalSinceNow
+            let minutes = interval / 60
+            
+            if minutes < 10 {
+                let bills = defaults.floatForKey("amount")
+                txtBills.text = bills.description
+            }
+        }
         //onBills_BeginEditing(txtBills)
     }
     
@@ -58,15 +64,16 @@ class ViewController: UIViewController {
             if let bills = Float(text) {
                 
                 let defaults = NSUserDefaults.standardUserDefaults()
+                let date = NSDate()
+                defaults.setObject(date, forKey: "amount-date")
                 defaults.setFloat(bills, forKey: "amount")
                 defaults.synchronize()
-
+                
             }
         }
 
 
     }
-    
     
     private func setTipPercentage(percent: Float){
         calculatorModel.tipsPercentage = percent
@@ -78,8 +85,6 @@ class ViewController: UIViewController {
         defaults.synchronize()
 
     }
-    
-    
     
     private var calculatorModel: TipsCalculatorModel!
     
