@@ -20,11 +20,13 @@ class ViewController: UIViewController {
         
         // load tip default
         loadAmount()
+        calculatorModel = TipsCalculatorModel()
+        loadDefauts()
     }
 
     override func viewWillAppear(animated: Bool) {
-        calculatorModel = TipsCalculatorModel()
-        loadDefauts()
+
+
         
 
     }
