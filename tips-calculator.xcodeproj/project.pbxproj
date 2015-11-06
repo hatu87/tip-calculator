@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		412444F11BE764A500B6F740 /* TipsCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412444F01BE764A400B6F740 /* TipsCalculatorModel.swift */; };
 		412444F51BE78CE100B6F740 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 412444F41BE78CE100B6F740 /* readme.md */; };
+		4159034C1BE8BD050056A46B /* CurrencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159034B1BE8BD050056A46B /* CurrencyTableViewController.swift */; };
+		4159034E1BE8C6730056A46B /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159034D1BE8C6730056A46B /* CurrencyModel.swift */; };
 		416CC1BC1BE6FA6600F882D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CC1BB1BE6FA6600F882D4 /* AppDelegate.swift */; };
 		416CC1BE1BE6FA6600F882D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416CC1BD1BE6FA6600F882D4 /* ViewController.swift */; };
 		416CC1C11BE6FA6700F882D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416CC1BF1BE6FA6700F882D4 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		412444F01BE764A400B6F740 /* TipsCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsCalculatorModel.swift; sourceTree = "<group>"; };
 		412444F41BE78CE100B6F740 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		4159034B1BE8BD050056A46B /* CurrencyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewController.swift; sourceTree = "<group>"; };
+		4159034D1BE8C6730056A46B /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		416CC1B81BE6FA6600F882D4 /* tips-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tips-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		416CC1BB1BE6FA6600F882D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		416CC1BD1BE6FA6600F882D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				412444F01BE764A400B6F740 /* TipsCalculatorModel.swift */,
+				4159034D1BE8C6730056A46B /* CurrencyModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				41C25FF91BE79A78000E8DD5 /* SettingsViewController.swift */,
+				4159034B1BE8BD050056A46B /* CurrencyTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -277,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4159034C1BE8BD050056A46B /* CurrencyTableViewController.swift in Sources */,
 				416CC1BE1BE6FA6600F882D4 /* ViewController.swift in Sources */,
+				4159034E1BE8C6730056A46B /* CurrencyModel.swift in Sources */,
 				416CC1BC1BE6FA6600F882D4 /* AppDelegate.swift in Sources */,
 				412444F51BE78CE100B6F740 /* readme.md in Sources */,
 				41C25FFA1BE79A78000E8DD5 /* SettingsViewController.swift in Sources */,

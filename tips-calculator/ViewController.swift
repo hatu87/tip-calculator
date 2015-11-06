@@ -71,8 +71,6 @@ class ViewController: UIViewController {
                 
             }
         }
-
-
     }
     
     private func setTipPercentage(percent: Float){
@@ -83,7 +81,6 @@ class ViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setFloat(percent, forKey: "tip")
         defaults.synchronize()
-
     }
     
     private var calculatorModel: TipsCalculatorModel!
